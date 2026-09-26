@@ -677,7 +677,7 @@ int main(void)
                     if (strlen(selected_version.download_url) > 0)
                     {
                         char target_path[256];
-                        snprintf(target_path, sizeof(target_path), "./%s",
+                        snprintf(target_path, sizeof(target_path), "./%s/mods",
                                  strlen(selected_version.filename) > 0 ? selected_version.filename : "downloaded_mod.jar");
 
                         bool ok = download_file(selected_version.download_url, target_path);
